@@ -32,7 +32,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OxToF/watchdog-mcp"
+    "url": "git+https://github.com/OxToF/watchdog-mcp.git"
   },
   "homepage": "https://github.com/OxToF/watchdog-mcp#readme",
   "bugs": {
