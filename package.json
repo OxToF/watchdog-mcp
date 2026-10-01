@@ -1,0 +1,45 @@
+{
+  "name": "watchdog-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Solana and EVM Watchdog: who can change a program or contract, dependency advisories, repo scans and watches, paid per call over x402.",
+  "type": "module",
+  "bin": {
+    "watchdog-mcp": "src/index.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "solana",
+    "evm",
+    "security",
+    "x402",
+    "agents",
+    "anchor",
+    "smart-contracts"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OxToF/watchdog-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "@solana/kit": "^8.4.0",
+    "@x402/evm": "^2.28.0",
+    "@x402/fetch": "^2.28.0",
+    "@x402/svm": "^2.28.0",
+    "viem": "^2.57.2",
+    "zod": "^4.6.5"
+  }
+}
