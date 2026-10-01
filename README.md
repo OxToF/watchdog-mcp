@@ -53,6 +53,8 @@ Claude Desktop, Cursor and other clients (`mcpServers` JSON):
 }
 ```
 
+From a clone of this repository, `scripts/add-to-claude-code.sh` does the Claude Code step for you: it reads the Solana key from the clipboard, checks it without printing it, and registers the server.
+
 Both keys are optional. Without a key for a chain, its tools return the price and how
 to pay instead of an answer.
 

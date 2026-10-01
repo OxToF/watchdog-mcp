@@ -1,6 +1,7 @@
 {
   "name": "watchdog-mcp",
   "version": "0.1.0",
+  "mcpName": "io.github.OxToF/watchdog-mcp",
   "description": "MCP server for Solana and EVM Watchdog: who can change a program or contract, dependency advisories, repo scans and watches, paid per call over x402.",
   "type": "module",
   "bin": {
@@ -32,6 +33,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/OxToF/watchdog-mcp"
+  },
+  "homepage": "https://github.com/OxToF/watchdog-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/OxToF/watchdog-mcp/issues"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.31.0",
