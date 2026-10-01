@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.OxToF/watchdog-mcp",
+  "title": "Watchdog",
+  "description": "Who can change a Solana program or EVM contract, dependency advisories, scans. Paid per call (x402).",
+  "websiteUrl": "https://github.com/OxToF/watchdog-mcp",
+  "repository": { "url": "https://github.com/OxToF/watchdog-mcp", "source": "github" },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "watchdog-mcp",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "WATCHDOG_SOLANA_PRIVATE_KEY", "description": "Base58 key of a dedicated Solana wallet holding a little USDC, to pay Solana Watchdog calls. Optional.", "isRequired": false, "isSecret": true, "format": "string" },
+        { "name": "WATCHDOG_EVM_PRIVATE_KEY", "description": "Hex key of a dedicated Base wallet holding a little USDC, to pay EVM Watchdog calls. Optional.", "isRequired": false, "isSecret": true, "format": "string" },
+        { "name": "WATCHDOG_BUDGET_USD", "description": "Maximum total spend per server process, in USD. Default 5.", "isRequired": false, "isSecret": false, "format": "number", "default": "5" },
+        { "name": "WATCHDOG_MAX_PER_CALL_USD", "description": "Maximum single payment, in USD. Default 1.", "isRequired": false, "isSecret": false, "format": "number", "default": "1" }
+      ]
+    }
+  ]
+}
